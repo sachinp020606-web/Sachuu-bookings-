@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sachuu 💞 Bookings</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-page="home">
+
+<div class="background">
+  <div class="overlay"></div>
+  <div class="spotlight one"></div>
+  <div class="spotlight two"></div>
+  <div class="spotlight three"></div>
+</div>
+
+<nav>
+  <div class="logo">🎬 Sachuu 💞 Bookings</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="trailers.html">Trailers</a></li>
+    <li><a href="offers.html">Offers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>WELCOME TO<br><span>Sachuu 💞 Bookings</span></h1>
+  <p>Book Your Favourite Movies Anytime, Anywhere 🍿</p>
+  <div class="buttons">
+    <a href="login.html"   class="btn">🎟 Book Tickets</a>
+    <a href="trailers.html" class="btn2">🎬 Watch Trailers</a>
+  </div>
+</section>
+
+<section class="trailers" id="trailers">
+  <h1>🔥 Trending Movie Trailers</h1>
+  <p class="sub-title">Watch the latest official trailers before booking your tickets.</p>
+  <div class="trailer-container" id="trailerContainer">
+    <p class="loading">Loading trailers…</p>
+  </div>
+</section>
+
+<section class="now-showing" id="movies">
+  <h1>🍿 Now Showing</h1>
+  <div class="movie-slider" id="movieSlider">
+    <p class="loading">Loading movies…</p>
+  </div>
+</section>
+
+<section class="offers" id="offers">
+  <h1>🎁 Special Offers</h1>
+  <div class="offer-container" id="offerContainer">
+    <p class="loading">Loading offers…</p>
+  </div>
+</section>
+
+<section class="features">
+  <h1>⭐ Why Choose Sachuu 💞 Bookings?</h1>
+  <div class="feature-container">
+    <div class="feature-card"><i class="fa-solid fa-film"></i><h2>Latest Movies</h2><p>Book the Latest Tamil, English, Telugu &amp; Hindi Movies.</p></div>
+    <div class="feature-card"><i class="fa-solid fa-couch"></i><h2>Luxury Seats</h2><p>Premium Recliner, Gold &amp; Silver Seats.</p></div>
+    <div class="feature-card"><i class="fa-solid fa-burger"></i><h2>Snacks Booking</h2><p>Pre-order Popcorn, Nachos, Coffee &amp; More.</p></div>
+    <div class="feature-card"><i class="fa-solid fa-credit-card"></i><h2>Secure Payment</h2><p>UPI, Cards, Net Banking &amp; Wallets.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h1>📞 Contact Us</h1>
+  <p>📧 Email : Sachink43328@gmail.com</p>
+  <p>📍 Tamil Nadu, India</p>
+  <p>📱 Customer Support : +91 XXXXX XXXXX</p>
+
+  <form id="contactForm" class="contact-form" novalidate>
+    <input type="text"  name="name"    placeholder="Your Name"  required>
+    <input type="email" name="email"   placeholder="Your Email" required>
+    <textarea           name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+    <p class="form-status" id="contactStatus" role="status"></p>
+  </form>
+</section>
+
+<footer>
+  <h2>🎬 Sachuu 💞 Bookings</h2>
+  <p>Book Movies Faster • Safer • Smarter</p>
+  <p>© 2026 Sachuu 💞 Bookings. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

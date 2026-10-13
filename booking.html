@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Tickets — Sachuu 💞 Bookings</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pages.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-page="booking">
+
+<div class="background">
+  <div class="overlay"></div>
+  <div class="spotlight one"></div>
+  <div class="spotlight two"></div>
+  <div class="spotlight three"></div>
+</div>
+
+<nav>
+  <div class="logo">🎬 Sachuu 💞 Bookings</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="trailers.html">Trailers</a></li>
+    <li><a href="offers.html">Offers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-hero">
+  <h1>Book Your Tickets 🍿</h1>
+  <p>Pick a movie, choose your seats, and confirm.</p>
+</section>
+
+<div class="booking-layout">
+  <div class="booking-panel">
+    <h2>1. Choose a Movie</h2>
+    <div class="movie-pick" id="moviePick">
+      <label><input type="radio" name="movie" value="Good Bad Ugly" checked><span>Good Bad Ugly</span></label>
+      <label><input type="radio" name="movie" value="Leo"><span>Leo</span></label>
+      <label><input type="radio" name="movie" value="Coolie"><span>Coolie</span></label>
+      <label><input type="radio" name="movie" value="Jailer 2"><span>Jailer 2</span></label>
+    </div>
+
+    <h2>2. Pick Your Seats</h2>
+    <div class="screen"></div>
+    <div class="seat-grid" id="seatGrid"></div>
+    <div class="seat-legend">
+      <span class="avail">Available</span>
+      <span class="sel">Selected</span>
+      <span class="bk">Booked</span>
+    </div>
+  </div>
+
+  <aside class="summary-card">
+    <h3>Booking Summary</h3>
+    <div class="summary-row"><span>Movie</span><span id="sumMovie">Good Bad Ugly</span></div>
+    <div class="summary-row"><span>Seats</span><span id="sumSeats">—</span></div>
+    <div class="summary-row"><span>Price / seat</span><span>₹180</span></div>
+    <div class="summary-row total"><span>Total</span><span id="sumTotal">₹0</span></div>
+    <button class="btn" id="confirmBtn">Confirm Booking</button>
+    <p class="form-status" id="bookingStatus" role="status"></p>
+  </aside>
+</div>
+
+<footer>
+  <h2>🎬 Sachuu 💞 Bookings</h2>
+  <p>Book Movies Faster • Safer • Smarter</p>
+  <p>© 2026 Sachuu 💞 Bookings. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
